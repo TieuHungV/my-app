@@ -9,20 +9,20 @@ import {
   MatSlideToggleModule, MatCheckboxModule
 } from '@angular/material';
 
-import {HOME_ROUTE} from './home.route';
-import {HomeComponent} from './home.component';
+import {ABOUT_ROUTE} from './about.route';
+import {AboutComponent} from './about.component';
 
 @NgModule({
   imports: [
     MatCheckboxModule, MatDatepickerModule, MatButtonModule, MatCardModule, MatRadioModule, MatSlideToggleModule,
-    RouterModule.forRoot([HOME_ROUTE], {useHash: true})
+    RouterModule.forRoot([ABOUT_ROUTE], {useHash: true})
   ],
   declarations: [
-    HomeComponent,
+    AboutComponent,
   ],
   entryComponents: [],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class CPHomeModule {
+export class CPAboutModule {
 }

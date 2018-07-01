@@ -3,15 +3,15 @@ import {Component} from '@angular/core';
 // import * as anime from 'animejs';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
+  selector: 'app-about',
+  templateUrl: './about.component.html',
   providers: [],
   styleUrls: [
-    'home.scss'
+    'about.scss'
   ]
 
 })
-export class HomeComponent {
+export class AboutComponent {
   properties: any;
   property: any;
   countries: any;

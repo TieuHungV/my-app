@@ -1,10 +1,12 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
-import {Route} from '@angular/router';
+// Frame work
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {AppComponent} from './app.component';
 
+import {CPPageModule} from '../page/page.module';
+
 import {AppRoutingModule} from './app-routing.module';
-import {CPHomeModule} from '../page/home';
 import {HeaderComponent, FooterComponent} from '../components/layouts';
 
 @NgModule({
@@ -16,10 +18,11 @@ import {HeaderComponent, FooterComponent} from '../components/layouts';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CPHomeModule
+    CPPageModule,
+    BrowserAnimationsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {
 }
