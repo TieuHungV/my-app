@@ -1,3 +1,3 @@
 const newdata = 1;
 
-const newfile 2 = 2;
+const newfile = 2;
